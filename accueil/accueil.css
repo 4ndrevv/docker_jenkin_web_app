@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.one{
+    overflow-x: hidden;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.full-height1 {
+    height: 80vh;
+}
+
+
+.full-height2 {
+    height: 60vh;
+}
+
+
+
+
+
+.left-to-right {
+    transform: translateX(-150%);
+}
+
+.left-to-right.start {
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+}
+
+.right-to-left {
+    transform: translateX(150%);
+}
+
+.right-to-left.start {
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+}
+
+.zoom {
+    transform: scale(0);
+}
+
+.zoom.start {
+    transition: 0.5s ease-in-out;
+    transform: unset;
+}
+
+#home {
+    background-image: linear-gradient(to right, #6F3203, #964B00);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#home p {
+    font-size: 20px;
+    width: 700px;
+    transition-delay: 0.2s;
+}
+
+#about {
+    display: flex;
+    background-image: url("photo/pexels-engin-akyurt-3219483.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    direction-flex : row;
+    flex-wrap: wrap
+}
+
+.box {
+
+    background-color: #5b390d;
+    width: 350px;
+    border-radius: 10px;
+    margin: 0px 15px;
+    margin-left: 6px;
+    padding: 30px;
+    color: white;
+}
+
+.box p{
+    color : #917143;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+#team {
+    background: linear-gradient(to right, #6F3203, #964B00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#team .person {
+    width: 200px;
+    padding: 0px;
+    margin: 0 170px;
+
+}
+
+.person h3 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.person p {
+    text-align: center;
+    color: #d2ae76;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.box:hover {
+    background: #a84a07;
+}
+
+.bxl-facebook-square {
+    font-size: 37px;
+    text-align: center;
+    color : #d2ae76;
+    position: center;
+
+}
+
+.bxl-instagram-alt {
+    font-size: 37px;
+    text-align: center;
+    color : #d2ae76;
+    position: center;
+
+}
+
+.two{
+    height: 93vh;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.full-height3{
+    background-image: url("photo/pexels-engin-akyurt-3219483.jpg");
+
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.image {
+    width: 22%;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.25s;
+}
+
+.image:hover img{
+    transform: scale(1.2);
+}
+
+.gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.25s;
+}
+
+.gallery.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.gallery-inner {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+.control {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.close {
+    color: white;
+    font-size: 35px;
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.titre_gallery{
+    text-align: center;
+    color: #e3b072;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top : 70px
+}
+
+.three{
+    height: 90vh;
+    display: flex;
+    background-image: url("photo/pexels-pixabay-260922.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    direction-flex : row;
+    flex-wrap: wrap
+}
+
+.information_text{
+    font-family: unset;
+    font-family: .AppleSystemUIFont;
+    color : #ded1c1;
+    font-size: 10px;
+    text-align: center;
+    margin-top : 600px;
+}
+
